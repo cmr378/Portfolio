@@ -42,7 +42,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
   line-height: 2rem;
 
@@ -81,7 +80,7 @@
   }
 
   &-branding{
-    background: $primary-color;
+    background: rgba($primary-color, 0.9);
     @include easeOut;
     transform: translate3d(0,-100%,0);
     &.show{
@@ -89,15 +88,16 @@
       transform: translate3d(0,0,0);
     }
     .portrait{
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       background-image: url('../img/self.jpeg');
       background-repeat: no-repeat;
-      align-items: center;
-      justify-content: center;
+      object-fit: contain;
+      display: inline-block;
       //make it a circle
-      border-radius: 50%;
+      background-position: center center;
       border: solid 3px $secondary-color;
+      border-radius: 50%;
     }
   }
 
