@@ -36,6 +36,7 @@
   }
 
   .menu-nav {
+    background: rgba($primary-color,1);
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
@@ -44,9 +45,10 @@
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
-
+    background: rgba($primary-color,.2); 
     .portrait {
-      background: url('../img/portrait_small.jpg');
+      background: url('../img/self.jpeg');
+      background-position: center;
       width: 150px;
       height: 150px;
     }
